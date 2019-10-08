@@ -1,5 +1,7 @@
 # Not Game Analytics #
 
+An unofficial wrapper library for [GameAnalytics](https://gameanalytics.com). If you are searching for the official library, you'll want to check out their [npm module](https://www.npmjs.com/package/gameanalytics).
+
 To get started:
 
 ```js
