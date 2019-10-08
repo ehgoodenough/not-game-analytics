@@ -1,6 +1,6 @@
 {
   "name": "not-game-analytics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An unofficial wrapper library for GameAnalytics.",
   "main": "index.js",
   "author": "Andrew McPherson <@ehgoodenough>",

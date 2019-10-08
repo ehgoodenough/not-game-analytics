@@ -13,8 +13,14 @@ NGA.initialize = function() {
         GameAnalytics._.setEnabledVerboseLog(true)
     }
 
+    if(NGA.GAME_KEY == undefined
+    || NGA.SECRET_KEY == undefined
+    || NGA.BUILD_VERSION == undefined) {
+        throw new Error("not-game-analytics is missing a key or build version.")
+    }
+
     GameAnalytics._.configureBuild(NGA.BUILD_VERSION)
-    GameAnalytics._.initialize(NGA.GA_GAME_KEY, NGA.GA_SECRET_KEY)
+    GameAnalytics._.initialize(NGA.GAME_KEY, NGA.SECRET_KEY)
 
     NGA.isInitialized = true
 }
