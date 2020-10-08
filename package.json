@@ -6,6 +6,6 @@
   "author": "Andrew McPherson <@ehgoodenough>",
   "license": "ISC",
   "dependencies": {
-    "gameanalytics": "^3.1.2"
+    "gameanalytics": "^4.1.2"
   }
 }
