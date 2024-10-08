@@ -33,24 +33,24 @@ NGA.reportError = function(error) {
 }
 
 // <String> stage
-NGA.reportStageStart = function(stage) {
+NGA.reportStageStart = function() {
     if(NGA.isReporting != true) return
     if(NGA.isInitialized != true) NGA.initialize()
-    GameAnalytics._.addProgressionEvent(GameAnalytics.EGAProgressionStatus.Start, stage)
+    GameAnalytics._.addProgressionEvent(GameAnalytics.EGAProgressionStatus.Start, ...arguments)
 }
 
 // <String> stage
-NGA.reportStageSuccess = function(stage) {
+NGA.reportStageSuccess = function() {
     if(NGA.isReporting != true) return
     if(NGA.isInitialized != true) NGA.initialize()
-    GameAnalytics._.addProgressionEvent(GameAnalytics.EGAProgressionStatus.Complete, stage)
+    GameAnalytics._.addProgressionEvent(GameAnalytics.EGAProgressionStatus.Complete, ...arguments)
 }
 
 // <String> stage
-NGA.reportStageFailure = function(stage) {
+NGA.reportStageFailure = function() {
     if(NGA.isReporting != true) return
     if(NGA.isInitialized != true) NGA.initialize()
-    GameAnalytics._.addProgressionEvent(GameAnalytics.EGAProgressionStatus.Fail, stage)
+    GameAnalytics._.addProgressionEvent(GameAnalytics.EGAProgressionStatus.Fail, ...arguments)
 }
 
 // <String> event like "FireLord:Death"
