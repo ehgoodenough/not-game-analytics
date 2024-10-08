@@ -8,8 +8,8 @@ To get started:
 const GameAnalytics = require("not-game-analytics")
 
 GameAnalytics.BUILD_VERSION = "vX.Y.Z"
-GameAnalytics.GA_GAME_KEY = "XXXXXXXXXXXXX"
-GameAnalytics.GA_SECRET_KEY = "XXXXXXXXXXXXX"
+GameAnalytics.GAME_KEY = "XXXXXXXXXXXXX"
+GameAnalytics.SECRET_KEY = "XXXXXXXXXXXXX"
 ```
 
 To use:
